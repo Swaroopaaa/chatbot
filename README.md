@@ -1,85 +1,132 @@
-PROJECT TITLE: Chatbot Application Using Python Flask & Gemini API
 
-🔹 Overview
-A simple yet intelligent chatbot built using Python Flask.
+Chatbot Application Using Python Flask & Gemini API
 
-Provides real-time responses to user messages.
 
-Integrates Google's Gemini API for enhanced conversation handling.
 
-Maintains persistent chat history in a JSON file.
+1. Project Overview
 
-Includes the ability to clear chat history.
+1. This is a web-based chatbot developed using Python Flask.
 
-🔹 Features
-Web-based interactive chat UI.
 
-Dynamic responses using Gemini API.
+2. It uses the Google Gemini API to generate intelligent responses.
 
-Stores and displays previous conversations.
 
-Option to clear chat history.
+3. Chat history is saved in a local JSON file.
 
-Easy-to-configure API key via .env file.
 
-🔹 Technologies Used
-Backend: Python, Flask
+4. Users can delete past chats using the Clear Chat button.
 
-Frontend: HTML, CSS, JavaScript
 
-Database: JSON file
+5. Lightweight and user-friendly interface with HTML, CSS, and JavaScript.
 
-API: Google Gemini API
 
-Environment Management: python-dotenv
 
-🔹 Setup Instructions
-Make sure Python is installed on your machine.
+2. Features
 
-Install required Python libraries:
+1. Interactive chat interface with real-time responses.
 
+
+2. Stores conversation history locally.
+
+
+3. Clean UI with Send and Clear buttons.
+
+
+4. Gemini API integration for AI-powered replies.
+
+
+5. Easy-to-modify and extend for advanced use cases.
+
+
+
+3. Technologies Used
+
+1. Languages: Python, HTML, CSS, JavaScript
+
+
+2. Backend: Flask
+
+
+3. Frontend: HTML/CSS + script.js
+
+
+4. API: Google Gemini
+
+
+5. Storage: JSON file (chat_history.json)
+
+
+6. Environment Management: python-dotenv
+
+
+4. Setup Instructions
+
+1. Ensure Python 3.x is installed.
+
+
+2. Install required packages:
 
 pip install flask python-dotenv
-Create a .env file in the root directory:
 
+
+3. Create a .env file and paste your Gemini API key:
 
 GOOGLE_API_KEY="your-api-key-here"
-Run the Flask application:
 
+
+4. Start the application:
 
 python app.py
-Open the browser and navigate to:
 
+
+5. Open your browser and go to:
 
 http://127.0.0.1:5000/
-🔹 How to Obtain Gemini API Key
-Visit: https://makersuite.google.com/app
 
-Sign in with your Google account.
 
-Go to: https://aistudio.google.com/app/apikey
 
-Click "Create API Key".
 
-Copy the key and paste it into your .env file as shown earlier.
+5. How to Get Gemini API Key
 
-🔹 Usage Guide
-Type a message into the input field.
+1. Visit https://makersuite.google.com/app
 
-Click Send to receive a chatbot response.
 
-Click Clear Chat to delete the conversation history.
+2. Sign in using your Google account.
 
-🔹 Project Structure
+
+3. Go to https://aistudio.google.com/app/apikey
+
+
+4. Click “Create API Key”.
+
+
+5. Copy the key and paste it into .env file as shown above.
+
+6. How to Use the Chatbot
+
+1. Type your message in the input field.
+
+
+2. Click the Send button to receive a response.
+
+
+3. Click the Clear Chat button to delete all previous messages.
+
+
+
+7. Project Structure
 
 chatbot_project/
 │
-├── app.py                → Flask backend logic
+├── app.py                → Flask backend
 ├── templates/
-│   └── index.html        → Chat interface
+│   └── index.html        → Chat UI
 ├── static/
-│   ├── style.css         → Chat UI styling
-│   └── script.js         → Frontend JS logic
-├── chat_history.json     → Stores chat history
-├── .env                  → Gemini API key storage
+│   ├── style.css         → Page styling
+│   └── script.js         → Button and input logic
+├── chat_history.json     → Stores user chats
+├── .env                  → Contains Gemini API Key
 └── README.md             → Project documentation
+
+
+
